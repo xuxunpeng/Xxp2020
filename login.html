@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<style>
+
+    /*背景DIV*/
+    .backgroundWall {
+        position: absolute;
+        background: #ebebeb;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*login窗口DIV*/
+    .loginWall {
+        position: absolute;
+        background-color: lightcyan;
+        width: 500px;
+        height: 400px;
+        top: 180px;
+        left: 800px;
+        border: 1px solid lemonchiffon; /*加个边框*/
+        border-radius: 15px 15px; /*加个圆角*/
+    }
+
+    .id {
+        position: absolute;
+        font-size: 20px;
+        top: 90px;
+        left: 60px;
+    }
+
+    .ID {
+
+        position: absolute;
+        font-size: 20px;
+        top: 110px;
+        left: 130px;
+
+    }
+
+    .pwd {
+        position: absolute;
+        font-size: 20px;
+        top: 190px;
+        left: 60px;
+    }
+
+    .PWD {
+        position: absolute;
+        font-size: 20px;
+        top: 210px;
+        left: 130px;
+
+    }
+
+    .LoginButton {
+        position: absolute;
+        font-size: 20px;
+        top: 270px;
+        left: 130px;
+
+    }
+
+    .FogetPassword {
+        position: absolute;
+        font-size: 15px;
+        top: 280px;
+        left: 290px;
+    }
+
+    .register {
+        position: absolute;
+        font-size: 15px;
+        top: 330px;
+        left: 290px;
+    }
+
+    .Welcome {
+        position: absolute;
+        font-size: 40px;
+
+        left: 58px;
+    }
+
+</style>
+<body>
+<div class="backgroundWall">
+    <div class="loginWall">
+        <form action="QueryStudent" method="post">
+            <h1 class="Welcome">欢迎</h1>
+            <p class="id">账号</p>
+            <input type="text" class="ID" name="Uname"><br>
+            <p class="pwd">密码</p>
+            <input type="password" class="PWD" name="Upwd">
+            <button type=submit class="LoginButton">登录</button>
+            <p class="register"><a href="zhuce.jsp" target="_blank">免费注册</a></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>
